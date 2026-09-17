@@ -1,0 +1,1417 @@
+/* ==================================================
+   FONTES
+================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+
+body {
+    background: #F7F5FA;
+    color: #17103D;
+    font-family: "DM Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* ==================================================
+   VARIÁVEIS
+================================================== */
+
+:root {
+    /* PALETA DO PROJETO */
+
+    --roxo-escuro: #00043A;
+    --roxo-1: #2D1E80;
+    --roxo-2: #3A0CA3;
+    --roxo-3: #560BAD;
+    --magenta-1: #B5179E;
+    --magenta-2: #C70DB3;
+    --rosa: #D90368;
+    --roxo-4: #7209B7;
+    --roxo-5: #9D4EDD;
+    --lilas: #C77DFF;
+
+    /* CORES DE APOIO */
+
+    --branco: #FFFFFF;
+    --fundo: #F8F6FB;
+    --texto: #17103D;
+    --texto-suave: #68637C;
+
+    /* FONTES */
+
+    --fonte-titulo: "Playfair Display", Georgia, serif;
+    --fonte-texto: "DM Sans", Arial, sans-serif;
+
+}
+
+
+
+/* ==================================================
+   CLASSES GERAIS
+================================================== */
+
+.secao-clara {
+    background: var(--fundo);
+    color: var(--texto);
+
+}
+
+.secao-escura {
+    background: var(--roxo-escuro);
+    color: var(--branco);
+}
+
+.secao-roxa {
+    background: linear-gradient(135deg, var(--roxo-2), var(--roxo-4));
+    color: var(--branco);
+}
+
+.etiqueta {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--rosa);
+}
+
+.secao-roxa .etiqueta,.secao-escura .etiqueta,
+.frase-destaque .etiqueta {
+    color: var(--lilas);
+}
+
+/* ==================================================
+   BOTÕES
+================================================== */
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    width: fit-content;
+    padding: 15px 23px;
+    border: 1px solid var(--roxo-3);
+    background: var(--roxo-3);
+    color: var(--branco);
+    font-size: .9rem;
+    font-weight: 700;
+    transition: .3s ease;
+
+}
+
+
+.botao:hover {
+    background: var(--rosa);
+    border-color: var(--rosa);
+    transform: translateY(-3px);
+}
+
+
+.botao-claro {
+    background: transparent;
+    border-color: var(--lilas);
+    color: var(--branco);
+}
+
+
+.botao-claro:hover {
+    background: var(--lilas);
+    color: var(--roxo-escuro);
+}
+
+
+
+/* ==================================================
+   TÍTULOS DAS SEÇÕES
+================================================== */
+
+.titulo-secao {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 55px;
+}
+
+
+.titulo-secao h2 {
+    max-width: 700px;
+    margin-top: 10px;
+    font-family: var(--fonte-titulo);
+    font-size: clamp(2.5rem, 5vw, 4.5rem );
+    line-height: 1;
+    font-weight: 500;
+}
+
+
+.titulo-secao > p {
+    max-width: 360px;
+    color: var(--texto-suave);
+    line-height: 1.7;
+}
+
+
+.centralizado {
+    display: block;
+    text-align: center;
+}
+
+
+.centralizado > p {
+    margin: 18px auto 0;
+}
+
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    min-height: 82px;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: #00043af0;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba#c77dff29
+}
+
+
+
+/* LOGO */
+
+.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--branco);
+}
+
+
+.logo span,.footer-logo span {
+    color: var(--lilas);
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+
+.menu a {
+    position: relative;
+    color: var(--branco);
+    font-size: .82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: var(--rosa);
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: var(--lilas);
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+/* BOTÃO DO HEADER */
+.botao-header {
+    padding: 10px 16px;
+    border: 1px solid var(--lilas);
+    color: var(--lilas);
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.botao-header:hover {
+    background: var(--lilas);
+    color: var(--roxo-escuro);
+}
+
+
+/* ==================================================
+   HOME / HERO
+================================================== */
+.hero {
+    min-height: 100vh;
+    padding-top: 82px;
+    display: grid;
+    grid-template-columns:1.08fr .92fr;
+    background: var(--fundo);
+}
+
+.hero-imagem {
+    min-height: calc( 100vh - 82px);
+    overflow: hidden;
+}
+
+.hero-imagem img {
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.82);
+    transition: transform 1s ease;
+}
+
+.hero:hover .hero-imagem img {
+    transform: scale(1.025);
+}
+
+.hero-conteudo {
+    padding: 9% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #2d1e8014, transparent 60%), var(--fundo);
+}
+
+
+.hero-conteudo h1 {
+    max-width: 620px;
+    margin: 20px 0;
+    color: var(--roxo-escuro);
+    font-family: var(--fonte-titulo);
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    line-height: .98;
+    font-weight: 500;
+}
+
+.hero-conteudo h1 em {
+    color: var(--magenta-1);
+    font-weight: 500;
+}
+
+.hero-conteudo p {
+    max-width: 530px;
+    margin-bottom: 32px;
+    color: var(--texto-suave);
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+
+/* ==================================================
+   POSTS EM DESTAQUE
+================================================== */
+.posts {
+    padding: 110px 7%;
+}
+
+
+.grid-posts {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1fr;
+    gap: 28px;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: var(--branco);
+    border: 1px solid#2d1e801a;
+    transition: .3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-7px);
+    box-shadow:0 20px 45px #2d1e801f;
+}
+
+
+.post-imagem {
+    height: 275px;
+    overflow: hidden;
+}
+
+.post-card.destaque.post-imagem {
+    height: 350px;
+}
+
+.post-imagem img {
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.post-card:hover.post-imagem img {
+    transform: scale(1.04);
+}
+
+.post-conteudo {
+    padding: 27px;
+}
+
+.categoria {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--rosa);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.post-conteudo h3 {
+    margin-bottom: 13px;
+    color: var(--roxo-escuro);
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+.post-conteudo p {
+    color: var(--texto-suave);
+    font-size: .92rem;
+    line-height: 1.7;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 22px;
+    color: var(--roxo-3);
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.link:hover {
+    color: var(--rosa);
+}
+
+
+/* ==================================================
+   FRASE DESTAQUE
+================================================== */
+.frase-destaque {
+    padding: 110px 10%;
+    background: var(--roxo-escuro);
+    color: var(--branco);
+}
+
+.frase-destaque > div {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.frase-destaque h2 {
+    margin-top: 18px;
+    font-family: var(--fonte-titulo);
+    font-size:clamp(2.4rem,5vw,5rem);
+    line-height: 1.08;
+    font-weight: 500;
+}
+
+
+/* ==================================================
+   SOBRE NÓS
+================================================== */
+.sobre {
+    min-height: 720px;
+    padding: 100px 7%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+    gap: 8%;
+}
+
+.sobre-imagem {
+    height: 560px;
+    overflow: hidden;
+}
+
+.sobre-imagem img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-conteudo {
+    max-width: 650px;
+}
+
+.sobre-conteudo h2 {
+    margin: 18px 0 25px;
+    font-family: var(--fonte-titulo);
+    font-size:clamp(2.7rem, 5vw, 5rem);
+    line-height: 1.02;
+    font-weight: 500;
+}
+
+.sobre-conteudo p {
+    max-width: 580px;
+    margin-bottom: 18px;
+    color: #D9D4EA;
+    line-height: 1.85;
+}
+
+.sobre-conteudo .botao {
+    margin-top: 20px;
+}
+
+
+/* ==================================================
+   REVIEWS
+================================================== */
+.reviews {
+    padding: 110px 7%;
+}
+
+.grid-reviews {
+    display: grid;
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 25px;
+
+}
+
+
+.review-card {
+
+    padding: 35px;
+
+    background: var(--branco);
+
+    border-top: 4px solid
+        var(--roxo-4);
+
+    box-shadow:
+        0 15px 40px
+        rgba(
+            45,
+            30,
+            128,
+            .07
+        );
+
+}
+
+
+.nota {
+
+    margin-bottom: 24px;
+
+    color: var(--rosa);
+
+    font-size: 1rem;
+
+    letter-spacing: 4px;
+
+}
+
+
+.review-card h3 {
+
+    margin-bottom: 18px;
+
+    color: var(--roxo-escuro);
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 1.7rem;
+
+    line-height: 1.2;
+
+}
+
+
+.review-card p {
+
+    color: var(--texto-suave);
+
+    line-height: 1.8;
+
+}
+
+
+.review-card .data {
+
+    display: block;
+
+    margin-top: 30px;
+
+    color: #8B869A;
+
+    font-size: .75rem;
+
+}
+
+
+
+/* ==================================================
+   INDICAÇÕES
+================================================== */
+
+.indicacoes {
+
+    padding: 110px 7%;
+
+}
+
+
+.indicacoes
+.titulo-secao > p {
+
+    color: #DDD5F0;
+
+}
+
+
+.lista-indicacoes {
+
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .28
+        );
+
+}
+
+
+.indicacao {
+
+    display: grid;
+
+    grid-template-columns:
+        90px
+        1fr
+        50px;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 28px 0;
+
+    border-bottom:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .28
+        );
+
+    transition: .3s;
+
+}
+
+
+.indicacao:hover {
+
+    padding-left: 15px;
+
+}
+
+
+.numero {
+
+    color: var(--lilas);
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 2rem;
+
+}
+
+
+.indicacao h3 {
+
+    margin-bottom: 5px;
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 1.7rem;
+
+    font-weight: 500;
+
+}
+
+
+.indicacao p {
+
+    color: #DCD6ED;
+
+    line-height: 1.6;
+
+}
+
+
+.seta {
+
+    color: var(--lilas);
+
+    font-size: 1.7rem;
+
+    text-align: right;
+
+}
+
+
+
+/* ==================================================
+   CONTATO
+================================================== */
+
+.contato {
+
+    padding: 110px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 10%;
+
+    align-items: start;
+
+}
+
+
+.contato-texto h2 {
+
+    margin: 18px 0;
+
+    color: var(--roxo-escuro);
+
+    font-family: var(--fonte-titulo);
+
+    font-size:
+        clamp(
+            3rem,
+            5vw,
+            5.5rem
+        );
+
+    line-height: 1;
+
+    font-weight: 500;
+
+}
+
+
+.contato-texto > p {
+
+    max-width: 500px;
+
+    color: var(--texto-suave);
+
+    line-height: 1.8;
+
+}
+
+
+.contato-info {
+
+    display: flex;
+
+    gap: 50px;
+
+    margin-top: 45px;
+
+}
+
+
+.contato-info p {
+
+    color: var(--texto-suave);
+
+    line-height: 1.7;
+
+}
+
+
+.contato-info strong {
+
+    color: var(--roxo-3);
+
+    font-size: .72rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+/* ==================================================
+   FORMULÁRIO
+================================================== */
+
+.formulario {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+}
+
+
+.formulario label {
+
+    margin-top: 14px;
+
+    color: var(--roxo-escuro);
+
+    font-size: .76rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+.formulario input,
+.formulario textarea {
+
+    width: 100%;
+
+    padding: 16px 0;
+
+    border: 0;
+
+    border-bottom:
+        1px solid
+        #BDB8C9;
+
+    outline: none;
+
+    background: transparent;
+
+    color: var(--texto);
+
+    font-family: var(--fonte-texto);
+
+    font-size: .95rem;
+
+    resize: vertical;
+
+}
+
+
+.formulario input:focus,
+.formulario textarea:focus {
+
+    border-color:
+        var(--roxo-3);
+
+}
+
+
+.formulario textarea {
+
+    min-height: 130px;
+
+}
+
+
+.formulario .botao {
+
+    margin-top: 25px;
+
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    padding: 55px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        auto
+        auto;
+
+    gap: 50px;
+
+    align-items: end;
+
+    background: var(--roxo-escuro);
+
+    color: var(--branco);
+
+}
+
+
+.footer-logo a {
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 1.8rem;
+
+}
+
+
+.footer-logo p {
+
+    max-width: 300px;
+
+    margin-top: 10px;
+
+    color: #BEB7D2;
+
+    font-size: .85rem;
+
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+
+.footer-links a {
+
+    color: #E1DCEE;
+
+    font-size: .75rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.footer-links a:hover {
+
+    color: var(--lilas);
+
+}
+
+
+.footer-social {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.footer-social a {
+
+    width: 35px;
+
+    height: 35px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: 1px solid var(--lilas);
+
+    color: var(--lilas);
+
+    font-size: .65rem;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+
+.footer-social a:hover {
+
+    background: var(--lilas);
+
+    color: var(--roxo-escuro);
+
+}
+
+
+
+/* ==================================================
+   CRÉDITOS
+================================================== */
+
+.creditos {
+
+    padding: 12px;
+
+    background: var(--rosa);
+
+    color: var(--branco);
+
+    text-align: center;
+
+    font-size: .72rem;
+
+}
+
+
+
+/* ==================================================
+   RESPONSIVIDADE
+   TABLET
+================================================== */
+
+@media (max-width: 1050px) {
+
+
+    /* HEADER */
+
+    .cabecalho {
+
+        padding-inline: 4%;
+
+    }
+
+
+    .menu {
+
+        gap: 17px;
+
+    }
+
+
+    .botao-header {
+
+        display: none;
+
+    }
+
+
+
+    /* HOME */
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .hero-imagem {
+
+        min-height: 50vh;
+
+    }
+
+
+    .hero-conteudo {
+
+        min-height: 55vh;
+
+        padding: 70px 7%;
+
+    }
+
+
+
+    /* POSTS */
+
+    .grid-posts {
+
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+
+    }
+
+
+    .post-card.destaque {
+
+        grid-column: span 2;
+
+    }
+
+
+
+    /* REVIEWS */
+
+    .grid-reviews {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+
+
+    /* SOBRE */
+
+    .sobre {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+
+
+    /* CONTATO */
+
+    .contato {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer {
+
+        grid-template-columns: 1fr;
+
+        align-items: start;
+
+    }
+
+}
+
+
+
+/* ==================================================
+   RESPONSIVIDADE
+   CELULAR
+================================================== */
+
+@media (max-width: 700px) {
+
+
+    html {
+
+        scroll-padding-top: 120px;
+
+    }
+
+
+
+    /* HEADER */
+
+    .cabecalho {
+
+        position: relative;
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 18px 5%;
+
+    }
+
+
+    .menu {
+
+        width: 100%;
+
+        gap: 12px 18px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .menu a {
+
+        font-size: .7rem;
+
+    }
+
+
+
+    /* HOME */
+
+    .hero {
+
+        padding-top: 0;
+
+    }
+
+
+    .hero-imagem {
+
+        min-height: 45vh;
+
+    }
+
+
+    .hero-conteudo {
+
+        min-height: auto;
+
+        padding: 65px 7%;
+
+    }
+
+
+    .hero-conteudo h1 {
+
+        font-size:
+            clamp(
+                3rem,
+                15vw,
+                5rem
+            );
+
+    }
+
+
+
+    /* SEÇÕES */
+
+    .posts,
+    .reviews,
+    .indicacoes,
+    .contato,
+    .sobre {
+
+        padding:
+            75px 6%;
+
+    }
+
+
+
+    /* TÍTULOS */
+
+    .titulo-secao {
+
+        display: block;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .titulo-secao > p {
+
+        margin-top: 20px;
+
+    }
+
+
+
+    /* POSTS */
+
+    .grid-posts {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .post-card.destaque {
+
+        grid-column: auto;
+
+    }
+
+
+    .post-imagem,
+    .post-card.destaque .post-imagem {
+
+        height: 270px;
+
+    }
+
+
+
+    /* FRASE */
+
+    .frase-destaque {
+
+        padding:
+            80px 7%;
+
+    }
+
+
+
+    /* SOBRE */
+
+    .sobre {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .sobre-imagem {
+
+        height: 400px;
+
+    }
+
+
+
+    /* REVIEWS */
+
+    .grid-reviews {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    /* CONTATO */
+
+    .contato {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contato-info {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+
+
+    /* INDICAÇÕES */
+
+    .indicacao {
+
+        grid-template-columns:
+            45px
+            1fr
+            25px;
+
+        gap: 15px;
+
+    }
+
+
+    .indicacao h3 {
+
+        font-size: 1.35rem;
+
+    }
+
+
+    .numero {
+
+        font-size: 1.4rem;
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer {
+
+        padding:
+            45px 6%;
+
+    }
+
+
+    .footer-links {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+}
