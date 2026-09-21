@@ -516,6 +516,626 @@ img {
 
 
 /* ==================================================
+   ESPECIAL — THALITA REBOUÇAS
+================================================== */
+
+.thalita {
+
+    background: #F8F6FB;
+
+    color: var(--texto);
+
+    padding: 120px 7%;
+
+}
+
+
+
+/* ==================================================
+   INTRODUÇÃO
+================================================== */
+
+.thalita-intro {
+
+    max-width: 1250px;
+
+    margin: 0 auto 130px;
+
+    display: grid;
+
+    grid-template-columns:
+        .8fr
+        1.2fr;
+
+    align-items: center;
+
+    gap: 9%;
+
+}
+
+
+.thalita-foto {
+
+    height: 600px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.thalita-foto::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -12px;
+
+    bottom: -12px;
+
+    width: 80%;
+
+    height: 80%;
+
+    border: 2px solid
+        var(--lilas);
+
+    z-index: 0;
+
+}
+
+
+.thalita-foto img {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: saturate(.8);
+
+}
+
+
+.thalita-texto {
+
+    max-width: 650px;
+
+}
+
+
+.thalita-texto h2 {
+
+    margin: 18px 0;
+
+    color: var(--roxo-escuro);
+
+    font-family: var(--fonte-titulo);
+
+    font-size:
+        clamp(
+            3.5rem,
+            7vw,
+            7rem
+        );
+
+    line-height: .9;
+
+    font-weight: 500;
+
+}
+
+
+.thalita-texto h2 em {
+
+    display: block;
+
+    color: var(--magenta-1);
+
+    font-weight: 500;
+
+}
+
+
+.thalita-subtitulo {
+
+    margin-bottom: 28px !important;
+
+    color: var(--roxo-3) !important;
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 1.35rem;
+
+    line-height: 1.5 !important;
+
+}
+
+
+.thalita-texto p {
+
+    margin-bottom: 17px;
+
+    color: var(--texto-suave);
+
+    line-height: 1.85;
+
+}
+
+
+
+/* ==================================================
+   PRINCIPAIS OBRAS
+================================================== */
+
+.thalita-obras {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+}
+
+
+.grid-obras {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 20px;
+
+}
+
+
+.obra-card {
+
+    min-height: 260px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background: var(--branco);
+
+    border: 1px solid
+        rgba(
+            45,
+            30,
+            128,
+            .12
+        );
+
+    transition: .3s ease;
+
+}
+
+
+.obra-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        var(--lilas);
+
+    box-shadow:
+        0 18px 40px
+        rgba(
+            45,
+            30,
+            128,
+            .10
+        );
+
+}
+
+
+.obra-numero {
+
+    color: var(--lilas);
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 2rem;
+
+}
+
+
+.obra-card h3 {
+
+    margin-bottom: 12px;
+
+    color: var(--roxo-escuro);
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 1.8rem;
+
+    line-height: 1.1;
+
+}
+
+
+.obra-card p {
+
+    color: var(--texto-suave);
+
+    font-size: .9rem;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* ==================================================
+   ADAPTAÇÕES
+================================================== */
+
+.adaptacoes {
+
+    max-width: 1250px;
+
+    margin: 140px auto 0;
+
+    padding: 75px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--roxo-escuro),
+            var(--roxo-2)
+        );
+
+    color: var(--branco);
+
+}
+
+
+.adaptacoes-titulo {
+
+    max-width: 700px;
+
+    margin-bottom: 65px;
+
+}
+
+
+.adaptacoes-titulo h2 {
+
+    margin: 12px 0 20px;
+
+    font-family: var(--fonte-titulo);
+
+    font-size:
+        clamp(
+            3rem,
+            6vw,
+            5.5rem
+        );
+
+    line-height: 1;
+
+    font-weight: 500;
+
+}
+
+
+.adaptacoes-titulo p {
+
+    color: #DCD6ED;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ==================================================
+   LINHA DO TEMPO
+================================================== */
+
+.timeline-adaptacoes {
+
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .25
+        );
+
+}
+
+
+.adaptacao {
+
+    display: grid;
+
+    grid-template-columns:
+        130px
+        1fr;
+
+    gap: 40px;
+
+    padding: 35px 0;
+
+    border-bottom:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .25
+        );
+
+    transition: .3s;
+
+}
+
+
+.adaptacao:hover {
+
+    padding-left: 15px;
+
+}
+
+
+.adaptacao-ano {
+
+    color: var(--lilas);
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 2.4rem;
+
+}
+
+
+.adaptacao-conteudo {
+
+    max-width: 750px;
+
+}
+
+
+.adaptacao-conteudo
+.categoria {
+
+    color: var(--lilas);
+
+}
+
+
+.adaptacao-conteudo h3 {
+
+    margin-bottom: 10px;
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+}
+
+
+.adaptacao-conteudo p {
+
+    color: #DCD6ED;
+
+    line-height: 1.75;
+
+}
+
+
+
+/* ==================================================
+   FRASE FINAL
+================================================== */
+
+.thalita-frase {
+
+    max-width: 900px;
+
+    margin: 100px auto 0;
+
+    text-align: center;
+
+}
+
+
+.thalita-frase p {
+
+    color: var(--roxo-escuro);
+
+    font-family: var(--fonte-titulo);
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.5rem
+        );
+
+    line-height: 1.2;
+
+}
+
+
+.thalita-frase span {
+
+    display: block;
+
+    margin-top: 20px;
+
+    color: var(--rosa);
+
+    font-size: .75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .thalita {
+
+        padding:
+            90px 6%;
+
+    }
+
+
+    .thalita-intro {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 60px;
+
+        margin-bottom: 90px;
+
+    }
+
+
+    .thalita-foto {
+
+        max-width: 600px;
+
+        height: 500px;
+
+    }
+
+
+    .grid-obras {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+
+    .adaptacoes {
+
+        padding: 55px 40px;
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .thalita {
+
+        padding:
+            75px 6%;
+
+    }
+
+
+    .thalita-intro {
+
+        gap: 45px;
+
+    }
+
+
+    .thalita-foto {
+
+        height: 420px;
+
+    }
+
+
+    .grid-obras {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .obra-card {
+
+        min-height: 220px;
+
+    }
+
+
+    .adaptacoes {
+
+        margin-top: 90px;
+
+        padding:
+            45px 25px;
+
+    }
+
+
+    .adaptacao {
+
+        grid-template-columns:
+            65px
+            1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .adaptacao-ano {
+
+        font-size: 1.5rem;
+
+    }
+
+
+    .adaptacao-conteudo h3 {
+
+        font-size: 1.6rem;
+
+    }
+
+
+    .thalita-frase {
+
+        margin-top: 70px;
+
+    }
+
+}
+
+/* ==================================================
    REVIEWS
 ================================================== */
 .reviews {
