@@ -387,57 +387,47 @@ img {
    HOME / HERO
 ================================================== */
 
+/* ================================
+   HERO
+================================ */
+
 .hero {
 
     min-height: 100vh;
 
     padding-top: 82px;
 
-    display: grid;
+    position: relative;
 
-    grid-template-columns:
-        1.08fr
-        .92fr;
+    display: flex;
 
-    background: var(--fundo);
-}
+    align-items: center;
 
+    background-image:
+        url("img/escada_livros.png");
 
-.hero-imagem {
+    background-size: cover;
 
-    min-height:
-        calc(100vh - 82px);
+    background-position: center;
+
+    background-repeat: no-repeat;
 
     overflow: hidden;
 }
 
 
-.hero-imagem img {
-
-    height: 100%;
-
-    object-fit: cover;
-
-    filter: saturate(.82);
-
-    transition:
-        transform
-        1s ease;
-}
-
-
-.hero:hover
-.hero-imagem img {
-
-    transform:
-        scale(1.025);
-}
-
+/* ================================
+   CONTEÚDO
+================================ */
 
 .hero-conteudo {
 
+    width: 50%;
+
+    margin-left: auto;
+
     padding:
-        9% 10%;
+        8% 7% 8% 5%;
 
     display: flex;
 
@@ -447,15 +437,45 @@ img {
 
     align-items: flex-start;
 
+    position: relative;
+
+    z-index: 2;
+
     background:
         linear-gradient(
             135deg,
-            #2d1e8014,
-            transparent 60%
-        ),
-        var(--fundo);
+            rgba(250, 248, 255, .96),
+            rgba(250, 248, 255, .88)
+        );
+
+    min-height:
+        calc(100vh - 82px);
+
+    box-sizing: border-box;
 }
 
+
+/* ================================
+   ETIQUETA
+================================ */
+
+.etiqueta {
+
+    color: var(--magenta-1);
+
+    font-size: .78rem;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   TÍTULO
+================================ */
 
 .hero-conteudo h1 {
 
@@ -469,9 +489,9 @@ img {
 
     font-size:
         clamp(
-            4rem,
-            7vw,
-            7rem
+            3.5rem,
+            5.5vw,
+            6rem
         );
 
     line-height: .96;
@@ -489,6 +509,10 @@ img {
     font-weight: 500;
 }
 
+
+/* ================================
+   TEXTO
+================================ */
 
 .hero-conteudo p {
 
@@ -828,26 +852,12 @@ img {
 
 .thalita-texto h2 {
 
-    margin:
-        20px 0 24px;
-
-    color:
-        var(--roxo-escuro);
-
-    font-family:
-        var(--fonte-titulo);
-
-    font-size:
-        clamp(
-            4.5rem,
-            8vw,
-            8rem
-        );
-
-    line-height: .88;
-
+    margin:20px 0 24px;
+    color:var(--roxo-escuro);
+    font-family:var(--fonte-titulo);
+    font-size:clamp(4.5rem, 8vw, 8rem);
+    line-height: .100;
     font-weight: 500;
-
     letter-spacing: -2px;
 }
 
@@ -855,29 +865,20 @@ img {
 .thalita-texto h2 em {
 
     display: block;
-
-    color:
-        var(--magenta-1);
-
+    color:var(--magenta-1);
     font-weight: 500;
 }
 
 
 .thalita-subtitulo {
-
     margin-bottom:
         32px !important;
-
-    color:
-        var(--roxo-3) !important;
-
-    font-family:
-        var(--fonte-titulo);
-
+    color: var(--roxo-3) !important;
+    font-family:var(--fonte-titulo);
     font-size:
         1.45rem;
 
-    line-height:
+line-height:
         1.5 !important;
 }
 
