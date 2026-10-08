@@ -297,19 +297,24 @@ img {
    HOME / HERO
 ================================================== */
 .hero {
-    min-height: 100vh;
+    height: calc(100vh - 42px);
+    min-height: 650px;
     padding-top: 82px;
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns:1.08fr .92fr;
+    grid-template-columns: 1.18fr .82fr;
     background: var(--fundo);
 }
 
+/* IMAGEM */
+
 .hero-imagem {
-    min-height: calc( 100vh - 82px);
+    min-height: 0;
     overflow: hidden;
 }
 
 .hero-imagem img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
     filter: saturate(.82);
@@ -320,23 +325,33 @@ img {
     transform: scale(1.025);
 }
 
+/* CONTEÚDO */
+
 .hero-conteudo {
-    padding: 9% 10%;
+    padding: 6% 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: linear-gradient(135deg, #2d1e8014, transparent 60%), var(--fundo);
+
+    background: linear-gradient(135deg, #2d1e8014, transparent 60%),var(--fundo);
 }
 
+/* ETIQUETA */
+
+.hero-conteudo .etiqueta {
+    margin-bottom: 4px;
+}
+
+/* TÍTULO */
 
 .hero-conteudo h1 {
-    max-width: 620px;
-    margin: 20px 0;
+    max-width: 560px;
+    margin: 12px 0 18px;
     color: var(--roxo-escuro);
     font-family: var(--fonte-titulo);
-    font-size: clamp(3.5rem, 6vw, 6.5rem);
-    line-height: .98;
+    font-size: clamp(3.3rem, 5vw, 5.5rem);
+    line-height: .92;
     font-weight: 500;
 }
 
@@ -345,14 +360,16 @@ img {
     font-weight: 500;
 }
 
+
+/* TEXTO */
+
 .hero-conteudo p {
-    max-width: 530px;
-    margin-bottom: 32px;
+    max-width: 480px;
+    margin: 0 0 24px;
     color: var(--texto-suave);
     font-size: 1rem;
-    line-height: 1.85;
+    line-height: 1.65;
 }
-
 
 /* ==================================================
    POSTS EM DESTAQUE
@@ -959,6 +976,98 @@ img {
         margin-top: 70px;
     }
 }
+
+/* ==================================================
+   REVIEWS
+================================================== */
+.reviews {
+    padding: 110px 7%;
+}
+
+.grid-reviews {
+    display: grid;
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 25px;
+
+}
+
+
+.review-card {
+
+    padding: 35px;
+
+    background: var(--branco);
+
+    border-top: 4px solid
+        var(--roxo-4);
+
+    box-shadow:
+        0 15px 40px
+        rgba(
+            45,
+            30,
+            128,
+            .07
+        );
+
+}
+
+
+.nota {
+
+    margin-bottom: 24px;
+
+    color: var(--rosa);
+
+    font-size: 1rem;
+
+    letter-spacing: 4px;
+
+}
+
+
+.review-card h3 {
+
+    margin-bottom: 18px;
+
+    color: var(--roxo-escuro);
+
+    font-family: var(--fonte-titulo);
+
+    font-size: 1.7rem;
+
+    line-height: 1.2;
+
+}
+
+
+.review-card p {
+
+    color: var(--texto-suave);
+
+    line-height: 1.8;
+
+}
+
+
+.review-card .data {
+
+    display: block;
+
+    margin-top: 30px;
+
+    color: #8B869A;
+
+    font-size: .75rem;
+
+}
+
+
 
 /* ==================================================
    INDICAÇÕES
