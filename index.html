@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Perspectiva | Blog</title>
+    <title>Entre Linhas | Blog</title>
 
     <meta name="description"
-        content="Perspectiva é um blog sobre cultura, descobertas, experiências, indicações e opiniões.">
+        content="Entre Linhas é um blog sobre cultura, descobertas, experiências, indicações e opiniões.">
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- GOOGLE FONTS -->
+    <!-- ================= GOOGLE FONTS ================= -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
         rel="stylesheet">
+
 </head>
 
 
 <body>
+
 
     <!-- ==================================================
          HEADER
@@ -31,22 +35,26 @@
     <header class="cabecalho">
 
         <a href="#inicio" class="logo">
-            PERSP<span>ECTIVA</span>
+            ENTRE<span>LINHAS</span>
         </a>
 
-        <nav class="menu" aria-label="Navegação principal">
 
-            <a href="#inicio">Home</a>
+    <nav class="menu" aria-label="Navegação principal">
 
-            <a href="#sobre">Sobre nós</a>
+        <a href="#inicio">Home</a>
 
-            <a href="#thalita">Thalita Rebouças</a>
+        <a href="#sobre">Sobre nós</a>
 
-            <a href="#indicacoes">Indicações</a>
+        <a href="#thalita">Thalita Rebouças</a>
 
-            <a href="#contato">Contato</a>
+        <a href="#reviews">Reviews</a>
 
-        </nav>
+        <a href="#indicacoes">Indicações</a>
+
+        <a href="#contato">Contato</a>
+
+    </nav>
+
 
         <a href="#contato" class="botao-header">
             Fale comigo
@@ -54,38 +62,62 @@
 
     </header>
 
+
+    <!-- ==================================================
+         CONTEÚDO PRINCIPAL
+    ================================================== -->
+
+    <main>
+
         <!-- ==================================================
              HOME
         ================================================== -->
 
-    <section id="inicio" class="hero">
+        <section id="inicio" class="hero">
 
-        <div class="hero-conteudo">
+            <div class="hero-imagem">
 
-        <span class="etiqueta">
-            DIÁRIO • CONHECIMENTO • OPINIÃO
-        </span>
+                <img
+                    src="img/fundo_inicial.png"
+                    alt="Livros e frase">
 
-        <h1>
-            Ideias para
-            <em>descobrir</em>
-            e compartilhar.
-        </h1>
+            </div>
 
-        <p>
-            Um cantinho para conversar sobre livros, filmes, séries,
-            lugares, experiências e aquelas pequenas descobertas
-            que deixam os dias mais interessantes.
-        </p>
 
-        <a href="#posts" class="botao">
-            Explorar o blog
-            <span>→</span>
-        </a>
+            <div class="hero-conteudo">
 
-        </div>
+                <span class="etiqueta">
+                    DIÁRIO • CONHECIMENTO • OPINIÃO
+                </span>
 
-    </section>
+
+                <h1>
+                    Ideias para
+                    <em>descobrir</em>
+                    e compartilhar.
+
+                </h1>
+
+                <p>
+                    Um cantinho para conversar sobre livros, filmes, séries
+                    lugares, experiências e aquelas pequenas descobertas
+                    que deixam os dias mais interessantes.
+
+                </p>
+
+                <a href="#posts" class="botao">
+
+                    Explorar o blog
+
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
 
         <!-- ==================================================
              POSTS EM DESTAQUE
@@ -93,10 +125,10 @@
 
         <section id="posts" class="posts secao-clara">
 
+
             <div class="titulo-secao">
 
                 <div>
-
                     <span class="etiqueta">
                         EM DESTAQUE
                     </span>
@@ -109,64 +141,73 @@
 
                 <p>
                     Livros, filmes e curiosidades mais do que especiais
-                    da nossa autora homenageada.
+                    da nossa autora homenageada
+
                 </p>
 
             </div>
 
 
-            <div class="grid-posts">
 
+            <div class="grid-posts">
 
                 <!-- POST 01 -->
 
                 <article class="post-card destaque">
 
+
                     <div class="post-imagem">
 
                         <img
                             src="img/thalita_branco.png"
-                            alt="Thalita Rebouças">
+                            alt="Livros empilhados">
 
                     </div>
+
 
                     <div class="post-conteudo">
 
                         <span class="categoria">
-                            SOBRE
+                            Sobre
                         </span>
 
+
                         <h3>
-                            Tudo o que você precisa saber sobre a
+                            Tudo o que você precisa saber sobre a 
                             Thalita Rebouças
                         </h3>
 
+
                         <p>
-                            Biografia e uma seleção de curiosidades que
-                            você deveria saber sobre essa autora tão
-                            querida entre jovens.
+
+                            Biografia e uma seleção de curiosidades que 
+                            você deveria saber sobre essa autora tão 
+                            querida entre jovens. 
+
                         </p>
 
-                        <a href="#thalita" class="link">
-                            Ler mais →
+
+                        <a href="#reviews" class="link">
+                            Ler review →
                         </a>
 
                     </div>
 
                 </article>
 
-
                 <!-- POST 02 -->
 
                 <article class="post-card">
 
+
                     <div class="post-imagem">
 
                         <img
-                            src="img/exemplo_imagem.jpg"
-                            alt="Poster de filme">
+                            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85"
+                            alt="Amigos conversando">
 
                     </div>
+
 
                     <div class="post-conteudo">
 
@@ -174,15 +215,21 @@
                             EXPERIÊNCIAS
                         </span>
 
+
                         <h3>
-                            Filmes adaptados que fizeram
+                            Filmes adapatdos que fizeram
                             meu mês melhor
                         </h3>
 
+
                         <p>
-                            Criações da 7ª arte e cenas que merecem
-                            um espaço especial na memória.
+
+                            Criações da 7ª arte e cenas
+                            que merecem um espaço especial
+                            na memória. Especial: Thalita Rebouças
+
                         </p>
+
 
                         <a href="#indicacoes" class="link">
                             Ver indicações →
@@ -192,34 +239,39 @@
 
                 </article>
 
-
                 <!-- POST 03 -->
 
                 <article class="post-card">
 
+
                     <div class="post-imagem">
 
                         <img
-                            src="img/novas_leituras.jpg"
-                            alt="Livro e música">
+                            src="img/escada_livros.png"
+                            alt="Paisagem durante uma viagem">
 
                     </div>
+
 
                     <div class="post-conteudo">
 
                         <span class="categoria">
-                            LIVROS
+                            Livros
                         </span>
 
+
                         <h3>
-                            Por que novas leituras
+                            Por que leituras novas
                             mudam a nossa perspectiva
                         </h3>
 
+
                         <p>
-                            Como leituras simples e juvenis podem
-                            nos trazer lições difíceis e maduras.
+                            Como leituras "simples" e juvenis podem
+                            nos trazer lições difíceis e "maduras"
+
                         </p>
+
 
                         <a href="#contato" class="link">
                             Continuar lendo →
@@ -228,6 +280,7 @@
                     </div>
 
                 </article>
+
 
             </div>
 
@@ -247,14 +300,16 @@
                     UMA PAUSA NO DIA
                 </span>
 
+
                 <h2>
-                    “Ame o que você tem, antes que a vida te ensine 
-                    a amar o que você tinha.”
+
+                    “Ame o que você tem, antes que a vida
+                    te ensine a amar o que você tinha.”
                 </h2>
                 <h3>
                     -Clarice Lispector
                 </h3>
-                    
+
             </div>
 
         </section>
@@ -266,6 +321,7 @@
         ================================================== -->
 
         <section id="sobre" class="sobre secao-escura">
+
 
             <div class="sobre-imagem">
 
@@ -282,627 +338,791 @@
                     SOBRE NÓS
                 </span>
 
+
                 <h2>
                     Um blog feito para compartilhar descobertas.
                 </h2>
 
+
                 <p>
+
                     O Perspectiva nasceu da vontade de transformar
                     opiniões, experiências e pequenas descobertas
                     em conversas produtivas e amigáveis.
+
                 </p>
 
+
                 <p>
+
                     Aqui você encontra conteúdo feito de forma leve
                     e pessoal: reviews, indicações, listas,
                     experiências e ideias para conhecer e fazer algo novo.
+
                 </p>
 
+
                 <a href="#contato" class="botao botao-claro">
+
                     Conheça o projeto
+
                     <span>→</span>
+
                 </a>
 
             </div>
 
         </section>
 
+    <!-- ==================================================
+     ESPECIAL — THALITA REBOUÇAS
+    ================================================== -->
+
+<section id="thalita" class="thalita">
+
+    <!-- INTRODUÇÃO -->
+
+    <div class="thalita-intro">
+
+        <div class="thalita-foto">
+
+            <img
+                src="img/thalita.png"
+                alt="Retrato ilustrativo para a seção sobre Thalita Rebouças"
+            >
+
+        </div>
+
+
+        <div class="thalita-texto">
+
+            <span class="etiqueta">
+                ESPECIAL SELIBI
+            </span>
+
+
+            <h2>
+                Thalita
+                <em>Rebouças</em>
+            </h2>
+
+
+            <p class="thalita-subtitulo">
+                Uma autora que transformou histórias sobre
+                adolescência, amizade, família e descobertas
+                em livros que chegaram também ao cinema e ao teatro.
+            </p>
+
+
+            <p>
+
+                Thalita Rebouças nasceu no Rio de Janeiro, em
+                10 de novembro de 1974. Jornalista de formação,
+                ela construiu sua trajetória principalmente como
+                escritora, com obras voltadas especialmente para
+                o público infantojuvenil.
+
+            </p>
+
+
+            <p>
+
+                Entre suas histórias mais conhecidas estão
+                <strong>Fala Sério, Mãe!</strong>,
+                <strong>Tudo por um Popstar</strong>,
+                <strong>Ela Disse, Ele Disse</strong> e
+                <strong>Confissões de uma Garota Excluída,
+                Mal-Amada e (Um Pouco) Dramática</strong>.
+
+            </p>
+
+
+            <p>
+
+                Seu trabalho também ultrapassou as páginas dos
+                livros. Algumas de suas histórias foram adaptadas
+                para o cinema, enquanto outras chegaram aos palcos,
+                ampliando o universo criado pela autora.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- OBRAS -->
+
+    <div class="thalita-obras">
+
+        <div class="titulo-secao">
+
+            <div>
+
+                <span class="etiqueta">
+                    PRINCIPAIS OBRAS
+                </span>
+
+
+                <h2>
+                    Histórias que conquistaram leitores
+                </h2>
+
+            </div>
+
+            <p>
+
+                Conheça alguns dos títulos que fazem parte
+                da trajetória literária da autora.
+
+            </p>
+
+        </div>
+
+
+        <div class="grid-obras">
+
+            <!-- OBRA 01 -->
+
+            <article class="obra-card">
+
+                <div class="obra-capa">
+                    <img
+                        src="img/fsm_livro.jpg"
+                        alt="Capa do livro Fala Sério, Mãe!"
+                    >
+                </div>
+
+                <span class="obra-numero">
+                    01
+                </span>
+
+
+                <div>
+
+                    <span class="categoria">
+                        LIVRO
+                    </span>
+
+
+                    <h3>
+                        Fala Sério, Mãe!
+                    </h3>
+
+
+                    <p>
+
+                        A relação entre Malu e sua mãe, Ângela,
+                        é apresentada através de diferentes
+                        momentos da vida da adolescente.
+
+                    </p>
+
+                </div></article>
+
+
+            <!-- OBRA 02 -->
+
+            <article class="obra-card">
+
+                <div class="obra-capa">
+                    <img
+                        src="img/td_popstar_livro.jpeg"
+                        alt="Capa do livro Tudo por um Popstar"
+                    >
+                </div>
+
+                <span class="obra-numero">
+                    02
+                </span>
+
+                <div>
+
+                    <span class="categoria">
+                        LIVRO
+                    </span>
+
+
+                    <h3>
+                        Tudo por um Popstar
+                    </h3>
+
+
+                    <p>
+
+                        Manu, Gabi e Ritinha são três amigas
+                        determinadas a encontrar seus ídolos
+                        durante uma passagem da banda pelo Brasil.
+
+                    </p>
+
+                </div></article>
+
+
+            <!-- OBRA 03 -->
+
+            <article class="obra-card">
+
+                <div class="obra-capa">
+                    <img
+                        src="img/ela_disse_livro.png"
+                        alt="Capa do livro Ela Disse, Ele Disse"
+                    >
+                </div>
+
+                <span class="obra-numero">
+                    03
+                </span>
+
+                <div>
+
+                    <span class="categoria">
+                        LIVRO
+                    </span>
+
+
+                    <h3>
+                        Ela Disse, Ele Disse
+                    </h3>
+
+
+                    <p>
+
+                        Rosa e Léo começam uma nova etapa da vida
+                        escolar e enfrentam amizades, diferenças,
+                        conflitos e descobertas da adolescência.
+
+                    </p>
+
+                </div></article>
+
+
+            <!-- OBRA 04 -->
+
+            <article class="obra-card">
+
+                <div class="obra-capa">
+                    <img
+                        src="img/confissoes_livro.png"
+                        alt="Capa do livro Confissões de uma Garota Excluída"
+                    >
+                </div>
+
+                <span class="obra-numero">
+                    04
+                </span>
+
+
+                <div>
+
+                    <span class="categoria">
+                        LIVRO
+                    </span>
+
+
+                    <h3>
+                        Confissões de uma Garota Excluída
+                    </h3>
+
+
+                    <p>
+
+                        Tetê precisa começar de novo em uma nova
+                        escola e lidar com amizades, inseguranças,
+                        bullying e a busca por pertencimento.
+
+                    </p>
+
+                </div></article>
+
+
+            <!-- OBRA 05 -->
+
+            <article class="obra-card">
+
+                <div class="obra-capa">
+                    <img
+                        src="img/fada_livro.jpg"
+                        alt="Capa do livro Uma Fada Veio Me Visitar"
+                    >
+                </div>
+
+                <span class="obra-numero">
+                    05
+                </span>
+
+
+                <div>
+
+                    <span class="categoria">
+                        LIVRO
+                    </span>
+
+
+                    <h3>
+                        Uma Fada Veio Me Visitar
+                    </h3>
+
+                    <p>
+                        Uma história que mistura fantasia,
+                        humor e adolescência e que posteriormente
+                        ganhou uma versão cinematográfica.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- OBRA 06 -->
+
+            <article class="obra-card">
+
+                <div class="obra-capa">
+                    <img
+                        src="img/td_namorado.png"
+                        alt="Capa do livro Tudo por um Namorado"
+                    >
+                </div>
+
+                <span class="obra-numero">
+                    06
+                </span>
+
+                <div>
+
+                    <span class="categoria">
+                        LIVRO
+                    </span>
+
+                    <h3>
+                        Tudo por um Namorado
+                    </h3>
+
+                    <p>
+                        A obra faz parte do universo de histórias
+                        que também inspirou a produção de
+                        Tudo por um Pop Star 2.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+    <!-- ADAPTAÇÕES -->
+
+    <div class="adaptacoes">
+
+        <div class="adaptacoes-titulo">
+
+            <span class="etiqueta">
+                DAS PÁGINAS PARA AS TELAS
+            </span>
+
+            <h2>
+                Obras adaptadas
+            </h2>
+
+            <p>
+                Algumas histórias de Thalita Rebouças
+                ganharam novas versões no cinema,
+                aproximando seus personagens de um novo público.
+            </p>
+
+        </div>
+
+        <div class="timeline-adaptacoes">
+
+            <!-- ADAPTAÇÃO 01 -->
+            <article class="adaptacao">
+
+                <div class="adaptacao-ano">
+                    2016
+                </div>
+
+                <div class="adaptacao-conteudo">
+
+                    <span class="categoria">
+                        CINEMA
+                    </span>
+
+                    <h3>
+                        É Fada!
+                    </h3>
+
+                    <p>
+                        O filme é baseado no livro
+                        <strong>Uma Fada Veio Me Visitar</strong>.
+                        A adaptação levou a história de Luna
+                        e sua relação com a adolescente Geraldine
+                        para o cinema.
+                    </p>
+
+                </div>
+
+                <div class="poster-filme">
+                    <img
+                        src="img/e_fada.png"
+                        alt="Pôster do filme É Fada!"
+                    >
+                </div>
+
+            </article>
+
+            <!-- ADAPTAÇÃO 02 -->
+            <article class="adaptacao">
+
+                <div class="adaptacao-ano">
+                    2017
+                </div>
+
+                <div class="adaptacao-conteudo">
+
+                    <span class="categoria">
+                        CINEMA
+                    </span>
+
+                    <h3>
+                        Fala Sério, Mãe!
+                    </h3>
+
+                    <p>
+                        O livro ganhou uma adaptação cinematográfica
+                        protagonizada por Larissa Manoela e
+                        Ingrid Guimarães, apresentando a relação
+                        entre Malu e sua mãe, Ângela.
+                    </p>
+
+                </div>
+
+                <div class="poster-filme">
+                    <img
+                        src="img/fsm_filme.png"
+                        alt="Pôster do filme Fala Sério, Mãe!"
+                    >
+                </div>
+
+            </article>
+
+            <!-- ADAPTAÇÃO 03 -->
+            <article class="adaptacao">
+
+                <div class="adaptacao-ano">
+                    2018
+                </div>
+
+                <div class="adaptacao-conteudo">
+
+                    <span class="categoria">
+                        CINEMA
+                    </span>
+
+                    <h3>
+                        Tudo por um Popstar
+                    </h3>
+
+                    <p>
+                        A aventura de Manu, Gabi e Ritinha chegou
+                        aos cinemas com Maisa Silva, Klara Castanho
+                        e Mel Maia nos papéis principais.
+                    </p>
+
+                </div>
+
+                <div class="poster-filme">
+                    <img
+                        src="img/td_popstar_filme.png"
+                        alt="Pôster do filme Tudo por um Popstar"
+                    >
+                </div>
+
+            </article>
+
+            <!-- ADAPTAÇÃO 04 -->
+            <article class="adaptacao">
+
+                <div class="adaptacao-ano">
+                    2019
+                </div>
+
+                <div class="adaptacao-conteudo">
+
+                    <span class="categoria">
+                        CINEMA
+                    </span>
+
+                    <h3>
+                        Ela Disse, Ele Disse
+                    </h3>
+
+                    <p>
+                        O livro homônimo foi adaptado para o cinema
+                        em uma história que acompanha Rosa e Léo
+                        durante uma nova fase da vida escolar.
+                    </p>
+
+                </div>
+
+                <div class="poster-filme">
+                    <img
+                        src="img/ela_disse_filme.png"
+                        alt="Pôster do filme Ela Disse, Ele Disse"
+                    >
+                </div>
+
+            </article>
+
+            <!-- ADAPTAÇÃO 05 -->
+            <article class="adaptacao">
+
+                <div class="adaptacao-ano">
+                    2021
+                </div>
+
+                <div class="adaptacao-conteudo">
+
+                    <span class="categoria">
+                        NETFLIX
+                    </span>
+
+                    <h3>
+                        Confissões de uma Garota Excluída
+                    </h3>
+
+                    <p>
+                        O filme da Netflix é baseado no livro
+                        <strong>Confissões de uma Garota Excluída,
+                        Mal-Amada e (Um Pouco) Dramática</strong>
+                        e acompanha Tetê em sua mudança de escola
+                        e nos desafios de recomeçar.
+                    </p>
+
+                </div>
+
+                <div class="poster-filme">
+                    <img
+                        src="img/confissoes_filme.png"
+                        alt="Pôster do filme Confissões de uma Garota Excluída"
+                    >
+                </div>
+
+            </article>
+
+            <!-- ADAPTAÇÃO 06 -->
+            <article class="adaptacao">
+
+                <div class="adaptacao-ano">
+                    2024
+                </div>
+
+                <div class="adaptacao-conteudo">
+
+                    <span class="categoria">
+                        CINEMA
+                    </span>
+
+                    <h3>
+                        Tudo por um Pop Star 2
+                    </h3>
+
+                    <p>
+                        A produção é inspirada no universo criado
+                        por Thalita Rebouças e tem roteiro adaptado
+                        a partir de <strong>Tudo por um Namorado</strong>.
+                        A história acompanha um novo trio de amigas.
+                    </p>
+
+                </div>
+
+                <div class="poster-filme">
+                    <img
+                        src="img/td_popstar2.png"
+                        alt="Pôster do filme Tudo por um Pop Star 2"
+                    >
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <!-- DESTAQUE FINAL -->
+
+    <div class="thalita-frase">
+
+        <p>
+
+            “Das páginas dos livros para diferentes telas,
+            as histórias continuam encontrando novos leitores
+            e espectadores.”
+
+        </p>
+
+
+        <span>
+            — Especial Entre Linhas
+        </span>
+
+    </div>
+
+
+</section>
 
 
         <!-- ==================================================
-             ESPECIAL — THALITA REBOUÇAS
+             REVIEWS
         ================================================== -->
 
-        <section id="thalita" class="thalita">
+        <section id="reviews" class="reviews secao-clara">
 
 
-            <!-- INTRODUÇÃO -->
+            <div class="titulo-secao centralizado">
 
-            <div class="thalita-intro">
+                <span class="etiqueta">
+                    REVIEWS
+                </span>
 
-                <div class="thalita-foto">
 
-                    <img
-                        src="img/thalita.png"
-                        alt="Retrato ilustrativo para a seção sobre Thalita Rebouças">
+                <h2>
+                    O que passou pelo nosso olhar
+                </h2>
 
-                </div>
-
-
-                <div class="thalita-texto">
-
-                    <span class="etiqueta">
-                        ESPECIAL SELIBI
-                    </span>
-
-                    <h2>
-                        Thalita
-                        <em>Rebouças</em>
-                    </h2>
-
-                    <p class="thalita-subtitulo">
-                        Uma autora que transformou histórias sobre
-                        adolescência, amizade, família e descobertas
-                        em livros que chegaram também ao cinema e ao teatro.
-                    </p>
-
-                    <p>
-                        Thalita Rebouças nasceu no Rio de Janeiro, em
-                        10 de novembro de 1974. Jornalista de formação,
-                        ela construiu sua trajetória principalmente como
-                        escritora, com obras voltadas especialmente para
-                        o público infantojuvenil.
-                    </p>
-
-                    <p>
-                        Entre suas histórias mais conhecidas estão
-                        <strong>Fala Sério, Mãe!</strong>,
-                        <strong>Tudo por um Popstar</strong>,
-                        <strong>Ela Disse, Ele Disse</strong> e
-                        <strong>Confissões de uma Garota Excluída,
-                        Mal-Amada e (Um Pouco) Dramática</strong>.
-                    </p>
-
-                    <p>
-                        Seu trabalho também ultrapassou as páginas dos
-                        livros. Algumas de suas histórias foram adaptadas
-                        para o cinema, enquanto outras chegaram aos palcos,
-                        ampliando o universo criado pela autora.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ==================================================
-                 PRINCIPAIS OBRAS
-            ================================================== -->
-
-            <div class="thalita-obras">
-
-                <div class="titulo-secao">
-
-                    <div>
-
-                        <span class="etiqueta">
-                            PRINCIPAIS OBRAS
-                        </span>
-
-                        <h2>
-                            Histórias que conquistaram leitores
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Conheça alguns dos títulos que fazem parte
-                        da trajetória literária da autora.
-                    </p>
-
-                </div>
-
-
-                <div class="grid-obras">
-
-
-                    <!-- OBRA 01 -->
-
-                    <article class="obra-card">
-
-                        <div class="obra-capa">
-
-                            <img
-                                src="img/obras/fala-serio-mae.jpg"
-                                alt="Capa do livro Fala Sério, Mãe!">
-
-                        </div>
-
-                        <span class="obra-numero">
-                            01
-                        </span>
-
-                        <div>
-
-                            <span class="categoria">
-                                LIVRO
-                            </span>
-
-                            <h3>
-                                Fala Sério, Mãe!
-                            </h3>
-
-                            <p>
-                                A relação entre Malu e sua mãe,
-                                Ângela, é apresentada através de
-                                diferentes momentos da vida da adolescente.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- OBRA 02 -->
-
-                    <article class="obra-card">
-
-                        <div class="obra-capa">
-
-                            <img
-                                src="img/obras/tudo-por-um-popstar.jpg"
-                                alt="Capa do livro Tudo por um Popstar">
-
-                        </div>
-
-                        <span class="obra-numero">
-                            02
-                        </span>
-
-                        <div>
-
-                            <span class="categoria">
-                                LIVRO
-                            </span>
-
-                            <h3>
-                                Tudo por um Popstar
-                            </h3>
-
-                            <p>
-                                Manu, Gabi e Ritinha são três amigas
-                                determinadas a encontrar seus ídolos
-                                durante uma passagem da banda pelo Brasil.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- OBRA 03 -->
-
-                    <article class="obra-card">
-
-                        <div class="obra-capa">
-
-                            <img
-                                src="img/obras/ela-disse-ele-disse.jpg"
-                                alt="Capa do livro Ela Disse, Ele Disse">
-
-                        </div>
-
-                        <span class="obra-numero">
-                            03
-                        </span>
-
-                        <div>
-
-                            <span class="categoria">
-                                LIVRO
-                            </span>
-
-                            <h3>
-                                Ela Disse, Ele Disse
-                            </h3>
-
-                            <p>
-                                Rosa e Léo começam uma nova etapa da vida
-                                escolar e enfrentam amizades, diferenças,
-                                conflitos e descobertas da adolescência.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- OBRA 04 -->
-
-                    <article class="obra-card">
-
-                        <div class="obra-capa">
-
-                            <img
-                                src="img/obras/confissoes.jpg"
-                                alt="Capa do livro Confissões de uma Garota Excluída">
-
-                        </div>
-
-                        <span class="obra-numero">
-                            04
-                        </span>
-
-                        <div>
-
-                            <span class="categoria">
-                                LIVRO
-                            </span>
-
-                            <h3>
-                                Confissões de uma Garota Excluída
-                            </h3>
-
-                            <p>
-                                Tetê precisa começar de novo em uma nova
-                                escola e lidar com amizades, inseguranças,
-                                bullying e a busca por pertencimento.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- OBRA 05 -->
-
-                    <article class="obra-card">
-
-                        <div class="obra-capa">
-
-                            <img
-                                src="img/obras/uma-fada-veio-me-visitar.jpg"
-                                alt="Capa do livro Uma Fada Veio Me Visitar">
-
-                        </div>
-
-                        <span class="obra-numero">
-                            05
-                        </span>
-
-                        <div>
-
-                            <span class="categoria">
-                                LIVRO
-                            </span>
-
-                            <h3>
-                                Uma Fada Veio Me Visitar
-                            </h3>
-
-                            <p>
-                                Uma história que mistura fantasia,
-                                humor e adolescência e que posteriormente
-                                ganhou uma versão cinematográfica.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- OBRA 06 -->
-
-                    <article class="obra-card">
-
-                        <div class="obra-capa">
-
-                            <img
-                                src="img/obras/tudo-por-um-namorado.jpg"
-                                alt="Capa do livro Tudo por um Namorado">
-
-                        </div>
-
-                        <span class="obra-numero">
-                            06
-                        </span>
-
-                        <div>
-
-                            <span class="categoria">
-                                LIVRO
-                            </span>
-
-                            <h3>
-                                Tudo por um Namorado
-                            </h3>
-
-                            <p>
-                                A obra faz parte do universo de histórias
-                                que também inspirou a produção de
-                                Tudo por um Pop Star 2.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ==================================================
-                 OBRAS ADAPTADAS
-            ================================================== -->
-
-            <div class="adaptacoes">
-
-                <div class="adaptacoes-titulo">
-
-                    <span class="etiqueta">
-                        DAS PÁGINAS PARA AS TELAS
-                    </span>
-
-                    <h2>
-                        Obras adaptadas
-                    </h2>
-
-                    <p>
-                        Algumas histórias de Thalita Rebouças
-                        ganharam novas versões no cinema,
-                        aproximando seus personagens de um novo público.
-                    </p>
-
-                </div>
-
-
-                <div class="timeline-adaptacoes">
-
-
-                    <!-- ADAPTAÇÃO 01 -->
-
-                    <article class="adaptacao">
-
-                        <div class="adaptacao-ano">
-                            2016
-                        </div>
-
-                        <div class="adaptacao-conteudo">
-
-                            <span class="categoria">
-                                CINEMA
-                            </span>
-
-                            <h3>
-                                É Fada!
-                            </h3>
-
-                            <p>
-                                A atrapalhada fada Geraldine recebe a missão de ajudar Julia, uma adolescente tímida que acabou de mudar de escola, a fazer amigos e ganhar confiança.
-                            </p>
-
-                        </div>
-
-                        <div class="poster-filme">
-
-                            <img
-                                src="img/e_fada.png"
-                                alt="Pôster do filme É Fada!">
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- ADAPTAÇÃO 02 -->
-
-                    <article class="adaptacao">
-
-                        <div class="adaptacao-ano">
-                            2017
-                        </div>
-
-                        <div class="adaptacao-conteudo">
-
-                            <span class="categoria">
-                                CINEMA
-                            </span>
-
-                            <h3>
-                                Fala Sério, Mãe!
-                            </h3>
-
-                            <p>
-                                Acompanha a relação cheia de altos e baixos, humor e afeto entre Angela Cristina e sua filha adolescente Maria de Lourdes, a Malu, ao longo das diferentes fases do crescimento.
-                            </p>
-
-                        </div>
-
-                        <div class="poster-filme">
-
-                            <img
-                                src="img/fsm_filme.png"
-                                alt="Pôster do filme Fala Sério, Mãe!">
-
-                        </div>
-
-                    </article>
-
-                    <!-- ADAPTAÇÃO 03 -->
-
-                    <article class="adaptacao">
-
-                        <div class="adaptacao-ano">
-                            2018
-                        </div>
-
-                        <div class="adaptacao-conteudo">
-
-                            <span class="categoria">
-                                CINEMA
-                            </span>
-
-                            <h3>
-                                Tudo por um Popstar
-                            </h3>
-
-                            <p>
-                                Três amigas inseparáveis de uma cidade do interior fazem de tudo para ir ao show da maior banda pop do momento no Rio de Janeiro, vivendo uma jornada cheia de confusões e aventuras.
-                            </p>
-
-                        </div>
-
-                        <div class="poster-filme">
-
-                            <img
-                                src="img/td_popstar_filme.png"
-                                alt="Pôster do filme Tudo por um Popstar">
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- ADAPTAÇÃO 04 -->
-
-                    <article class="adaptacao">
-
-                        <div class="adaptacao-ano">
-                            2019
-                        </div>
-
-                        <div class="adaptacao-conteudo">
-
-                            <span class="categoria">
-                                CINEMA
-                            </span>
-
-                            <h3>
-                                Ela Disse, Ele Disse
-                            </h3>
-
-                            <p>
-                                Rosa e Léo são dois adolescentes que chegam a uma nova escola e precisam lidar com novos amigos, a rotina escolar, as diferenças de perspectiva entre garotos e garotas e o primeiro amor.
-                            </p>
-
-                        </div>
-
-                        <div class="poster-filme">
-
-                            <img
-                                src="img/ela_disse_filme.png"
-                                alt="Pôster do filme Ela Disse, Ele Disse">
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- ADAPTAÇÃO 05 -->
-
-                    <article class="adaptacao">
-
-                        <div class="adaptacao-ano">
-                            2021
-                        </div>
-
-                        <div class="adaptacao-conteudo">
-
-                            <span class="categoria">
-                                NETFLIX
-                            </span>
-
-                            <h3>
-                                Confissões de uma Garota Excluída
-                            </h3>
-
-                            <p>
-                                Tetê não se sente aceita nem na escola nem em casa. Ao se mudar para o Rio de Janeiro com a família, ela ganha a chance de recomeçar do zero e descobrir a importância da amizade e da autoaceitação.
-                            </p>
-
-                        </div>
-
-                        <div class="poster-filme">
-
-                            <img
-                                src="img/confissoes_filme.png"
-                                alt="Pôster do filme Confissões de uma Garota Excluída">
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- ADAPTAÇÃO 06 -->
-
-                    <article class="adaptacao">
-
-                        <div class="adaptacao-ano">
-                            2024
-                        </div>
-
-                        <div class="adaptacao-conteudo">
-
-                            <span class="categoria">
-                                CINEMA
-                            </span>
-
-                            <h3>
-                                Tudo por um Pop Star 2
-                            </h3>
-
-                            <p>
-                                Três amigas decidem fazer uma viagem de fusca para assistir ao show de despedida de um famoso cantor pop que estudou na mesma escola que elas, enfrentando perrengues e testando a amizade pelo caminho.
-                            </p>
-
-                        </div>
-
-                        <div class="poster-filme">
-
-                            <img
-                                src="img/td_popstar2.png"
-                                alt="Pôster do filme Tudo por um Pop Star 2">
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ==================================================
-                 FRASE FINAL
-            ================================================== -->
-
-            <div class="thalita-frase">
 
                 <p>
-                    “Como fazemos bobagem quando 
-                    somos jovens.”
+
+                    Opiniões pessoais sobre aquilo que lemos,
+                    assistimos, visitamos ou experimentamos.
+
                 </p>
 
-                <span>
-                    — Thalita Rebouças
-                </span>
+            </div>
+
+
+
+            <div class="grid-reviews">
+
+
+                <!-- REVIEW 01 -->
+
+                <article class="review-card">
+
+                    <div class="nota">
+                        ★★★★★
+                    </div>
+
+
+                    <span class="categoria">
+                        LIVRO
+                    </span>
+
+
+                    <h3>
+                        Uma história que fica na cabeça
+                        depois da última página
+                    </h3>
+
+
+                    <p>
+
+                        “A leitura prende a atenção sem perder
+                        a delicadeza. É daquelas histórias que
+                        continuam com você mesmo depois de terminar.”
+
+                    </p>
+
+
+                    <span class="data">
+                        Review • 12 set 2026
+                    </span>
+
+                </article>
+
+
+
+                <!-- REVIEW 02 -->
+
+                <article class="review-card">
+
+                    <div class="nota">
+                        ★★★★☆
+                    </div>
+
+
+                    <span class="categoria">
+                        FILME
+                    </span>
+
+
+                    <h3>
+                        Quando a fotografia também
+                        conta a história
+                    </h3>
+
+
+                    <p>
+
+                        “Um filme visualmente marcante,
+                        com personagens que fazem a experiência
+                        valer a pena.”
+
+                    </p>
+
+
+                    <span class="data">
+                        Review • 06 set 2026
+                    </span>
+
+                </article>
+
+
+
+                <!-- REVIEW 03 -->
+
+                <article class="review-card">
+
+                    <div class="nota">
+                        ★★★★★
+                    </div>
+
+
+                    <span class="categoria">
+                        LUGAR
+                    </span>
+
+
+                    <h3>
+                        Um lugar para desacelerar
+                        e aproveitar o momento
+                    </h3>
+
+
+                    <p>
+
+                        “Ambiente acolhedor, detalhes bonitos
+                        e uma experiência que combina com
+                        aqueles dias em que você quer respirar.”
+
+                    </p>
+
+
+                    <span class="data">
+                        Review • 28 ago 2026
+                    </span>
+
+                </article>
+
 
             </div>
 
         </section>
+
 
 
         <!-- ==================================================
@@ -910,6 +1130,7 @@
         ================================================== -->
 
         <section id="indicacoes" class="indicacoes secao-roxa">
+
 
             <div class="titulo-secao">
 
@@ -919,18 +1140,23 @@
                         INDICAÇÕES
                     </span>
 
+
                     <h2>
                         Salve para depois
                     </h2>
 
                 </div>
 
+
                 <p>
+
                     Uma seleção de coisas que podem entrar
                     na sua próxima lista de desejos.
+
                 </p>
 
             </div>
+
 
 
             <div class="lista-indicacoes">
@@ -944,22 +1170,28 @@
                         01
                     </span>
 
+
                     <div>
 
                         <span class="categoria">
                             PARA LER
                         </span>
 
+
                         <h3>
                             Um livro para o fim de semana
                         </h3>
 
+
                         <p>
+
                             Escolha uma história envolvente
                             e reserve algumas horas só para você.
+
                         </p>
 
                     </div>
+
 
                     <span class="seta">
                         ↗
@@ -977,22 +1209,28 @@
                         02
                     </span>
 
+
                     <div>
 
                         <span class="categoria">
                             PARA ASSISTIR
                         </span>
 
+
                         <h3>
                             Um filme para uma noite tranquila
                         </h3>
 
+
                         <p>
+
                             Prepare a pipoca, escolha um filme
                             e transforme uma noite comum.
+
                         </p>
 
                     </div>
+
 
                     <span class="seta">
                         ↗
@@ -1010,22 +1248,28 @@
                         03
                     </span>
 
+
                     <div>
 
                         <span class="categoria">
                             PARA CONHECER
                         </span>
 
+
                         <h3>
                             Um lugar novo para colocar no roteiro
                         </h3>
 
+
                         <p>
+
                             Às vezes, a melhor descoberta está
                             a poucos quilômetros de casa.
+
                         </p>
 
                     </div>
+
 
                     <span class="seta">
                         ↗
@@ -1043,28 +1287,35 @@
                         04
                     </span>
 
+
                     <div>
 
                         <span class="categoria">
                             PARA EXPERIMENTAR
                         </span>
 
+
                         <h3>
                             Uma experiência diferente
                         </h3>
 
+
                         <p>
+
                             Saia um pouco do automático e
                             experimente algo que você nunca fez.
+
                         </p>
 
                     </div>
+
 
                     <span class="seta">
                         ↗
                     </span>
 
                 </article>
+
 
             </div>
 
@@ -1078,33 +1329,52 @@
 
         <section id="contato" class="contato secao-clara">
 
+
             <div class="contato-texto">
 
                 <span class="etiqueta">
                     CONTATO
                 </span>
 
+
                 <h2>
-                    Quer conversar com a gente?
+                    Vamos conversar?
                 </h2>
 
+
                 <p>
+
                     Tem uma indicação, sugestão ou assunto
                     que gostaria de ver por aqui? Envie uma mensagem.
+
                 </p>
+
 
                 <div class="contato-info">
 
                     <p>
-                        <strong>E-mail</strong>
+
+                        <strong>
+                            E-mail
+                        </strong>
+
                         <br>
-                        contato@perspectiva.com
+
+                        contato@entrelinhas.com
+
                     </p>
 
+
                     <p>
-                        <strong>Instagram</strong>
+
+                        <strong>
+                            Instagram
+                        </strong>
+
                         <br>
-                        @perspectiva.blog
+
+                        @entrelinhas.blog
+
                     </p>
 
                 </div>
@@ -1112,9 +1382,11 @@
             </div>
 
 
+
             <!-- FORMULÁRIO -->
 
             <form class="formulario">
+
 
                 <label for="nome">
                     Nome
@@ -1127,6 +1399,7 @@
                     placeholder="Seu nome"
                     required
                 >
+
 
 
                 <label for="email">
@@ -1142,6 +1415,7 @@
                 >
 
 
+
                 <label for="mensagem">
                     Mensagem
                 </label>
@@ -1155,14 +1429,20 @@
                 ></textarea>
 
 
+
                 <button type="submit" class="botao">
+
                     Enviar mensagem
+
                     <span>→</span>
+
                 </button>
+
 
             </form>
 
         </section>
+
 
     </main>
 
@@ -1174,17 +1454,20 @@
 
     <footer>
 
+
         <div class="footer-logo">
 
             <a href="#inicio">
-                PERSP<span>ECTIVA</span>
+                ENTRE<span>LINHAS</span>
             </a>
 
+
             <p>
-                Ideias para descobrir e compartilhar.
+                Ideias para ler, descobrir e compartilhar.
             </p>
 
         </div>
+
 
 
         <div class="footer-links">
@@ -1195,10 +1478,6 @@
 
             <a href="#sobre">
                 Sobre nós
-            </a>
-
-            <a href="#thalita">
-                Thalita
             </a>
 
             <a href="#reviews">
@@ -1214,6 +1493,7 @@
             </a>
 
         </div>
+
 
 
         <div class="footer-social">
@@ -1232,6 +1512,7 @@
 
         </div>
 
+
     </footer>
 
 
@@ -1242,7 +1523,7 @@
 
     <div class="creditos">
 
-        © 2026 Entre Linhas • Feito por Rebeca Maciel 
+        © 2026 Entre Linhas • Feito por Rebeca Maciel
 
     </div>
 
