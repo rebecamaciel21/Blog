@@ -1877,3 +1877,384 @@ footer {
     }
 
 }
+
+/* ==================================================
+   RESPONSIVIDADE
+   CELULAR
+================================================== */
+
+@media (max-width: 700px) {
+
+
+    html {
+
+        scroll-padding-top: 120px;
+
+    }
+
+
+
+    /* HEADER */
+
+    .cabecalho {
+
+        position: relative;
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 18px 5%;
+
+    }
+
+
+    .menu {
+
+        width: 100%;
+
+        gap: 12px 18px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .menu a {
+
+        font-size: .7rem;
+
+    }
+
+
+
+    /* HOME */
+
+    .hero {
+
+        padding-top: 0;
+
+    }
+
+
+    .hero-imagem {
+
+        min-height: 45vh;
+
+    }
+
+
+    .hero-conteudo {
+
+        min-height: auto;
+
+        padding: 65px 7%;
+
+    }
+
+
+    .hero-conteudo h1 {
+
+        font-size:
+            clamp(
+                3rem,
+                15vw,
+                5rem
+            );
+
+    }
+
+
+
+    /* SEÇÕES */
+
+    .posts,
+    .reviews,
+    .indicacoes,
+    .contato,
+    .sobre {
+
+        padding:
+            75px 6%;
+
+    }
+
+
+
+    /* TÍTULOS */
+
+    .titulo-secao {
+
+        display: block;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .titulo-secao > p {
+
+        margin-top: 20px;
+
+    }
+
+
+
+    /* POSTS */
+
+    .grid-posts {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .post-card.destaque {
+
+        grid-column: auto;
+
+    }
+
+
+    .post-imagem,
+    .post-card.destaque .post-imagem {
+
+        height: 270px;
+
+    }
+
+
+
+    /* FRASE */
+
+    .frase-destaque {
+
+        padding:
+            80px 7%;
+
+    }
+
+
+
+    /* SOBRE */
+
+    .sobre {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .sobre-imagem {
+
+        height: 400px;
+
+    }
+
+
+
+    /* REVIEWS */
+
+    .grid-reviews {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    /* CONTATO */
+
+    .contato {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contato-info {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+
+
+    /* INDICAÇÕES */
+
+    .indicacao {
+
+        grid-template-columns:
+            45px
+            1fr
+            25px;
+
+        gap: 15px;
+
+    }
+
+
+    .indicacao h3 {
+
+        font-size: 1.35rem;
+
+    }
+
+
+    .numero {
+
+        font-size: 1.4rem;
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer {
+
+        padding:
+            45px 6%;
+
+    }
+
+
+    .footer-links {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+}
+
+/* ==================================================
+   AJUSTES RESPONSIVOS FINAIS — TODAS AS SEÇÕES
+   Mantém a estrutura original e adapta o layout por tela.
+================================================== */
+
+@media (max-width: 1100px) {
+    .cabecalho { gap: 18px; padding-inline: 4%; }
+    .menu { gap: 15px; }
+    .menu a { font-size: .74rem; letter-spacing: .5px; }
+    .hero-conteudo { padding-inline: 7%; }
+    .grid-posts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .post-card.destaque { grid-column: 1 / -1; }
+    .sobre { gap: 5%; }
+    .grid-reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .adaptacoes { padding: 60px 5%; }
+    .contato { gap: 6%; }
+}
+
+@media (max-width: 850px) {
+    .cabecalho {
+        min-height: 76px;
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        gap: 14px 22px;
+    }
+    .logo { font-size: 1.35rem; }
+    .menu { order: 3; width: 100%; justify-content: flex-start; flex-wrap: wrap; gap: 12px 20px; }
+    .menu a { font-size: .72rem; }
+    .botao-header { display: none; }
+    html { scroll-padding-top: 120px; }
+
+    .hero { padding-top: 118px; min-height: 90vh; min-height: 90svh; }
+    .hero-conteudo { padding: 75px 7%; }
+    .hero::before { background: linear-gradient(90deg, rgba(248,246,251,.96), rgba(248,246,251,.78) 65%, rgba(248,246,251,.42)); }
+
+    .titulo-secao { gap: 25px; }
+    .sobre { grid-template-columns: 1fr; gap: 35px; }
+    .sobre-imagem { height: clamp(280px, 55vw, 440px); }
+    .thalita { padding: 85px 6%; }
+    .thalita-intro { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 6%; }
+    .thalita-foto { height: clamp(360px, 55vw, 500px); }
+    .thalita-texto h2 { font-size: clamp(3.3rem, 7vw, 5.3rem); letter-spacing: -1px; }
+    .grid-obras { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .adaptacao { grid-template-columns: 75px minmax(0, 1fr) 105px; gap: 18px; }
+    .poster-filme { width: 105px; height: 150px; }
+    .indicacao { grid-template-columns: 60px minmax(0, 1fr) 30px; gap: 18px; }
+    .contato { grid-template-columns: 1fr; gap: 45px; }
+    footer { grid-template-columns: 1fr 1fr; align-items: start; }
+    .footer-logo { grid-column: 1 / -1; }
+}
+
+@media (max-width: 600px) {
+    html { scroll-padding-top: 145px; }
+    .cabecalho { position: relative; padding: 16px 5%; align-items: flex-start; }
+    .logo { font-size: 1.3rem; }
+    .menu { gap: 10px 14px; }
+    .menu a { font-size: .68rem; }
+
+    .hero { padding-top: 0; min-height: 620px; min-height: 88svh; align-items: center; }
+    .hero-imagem { inset: 0; }
+    .hero::before { background: linear-gradient(90deg, rgba(248,246,251,.96), rgba(248,246,251,.84)); }
+    .hero-conteudo { padding: 70px 6%; }
+    .hero-conteudo .etiqueta { font-size: .62rem; letter-spacing: 2px; line-height: 1.6; }
+    .hero-conteudo h1 { font-size: clamp(2.8rem, 12vw, 4.5rem); margin: 17px 0; }
+    .hero-conteudo p { font-size: .95rem; line-height: 1.75; margin-bottom: 25px; }
+
+    .posts, .reviews, .indicacoes, .contato, .sobre { padding: 72px 6%; }
+    .titulo-secao { display: block; margin-bottom: 34px; }
+    .titulo-secao h2 { font-size: clamp(2.2rem, 9vw, 3.4rem); line-height: 1.05; }
+    .titulo-secao > p { margin-top: 17px; }
+    .grid-posts, .grid-reviews { grid-template-columns: 1fr; gap: 20px; }
+    .post-card.destaque { grid-column: auto; }
+    .post-imagem, .post-card.destaque .post-imagem { height: 245px; }
+    .post-conteudo { padding: 23px; }
+    .post-conteudo h3 { font-size: 1.55rem; }
+    .frase-destaque { padding: 75px 7%; }
+    .frase-destaque h2 { font-size: clamp(2rem, 8vw, 3rem); }
+    .sobre-imagem { height: 300px; }
+    .sobre-conteudo h2 { font-size: clamp(2.4rem, 9vw, 3.5rem); }
+
+    .thalita { padding: 75px 6%; }
+    .thalita-intro { grid-template-columns: 1fr; gap: 38px; margin-bottom: 75px; }
+    .thalita-foto { width: 100%; height: clamp(300px, 95vw, 430px); }
+    .thalita-texto h2 { font-size: clamp(3.2rem, 15vw, 4.8rem); line-height: 1.02; letter-spacing: -1px; overflow-wrap: anywhere; }
+    .thalita-subtitulo { font-size: 1.15rem; }
+    .thalita-texto p { font-size: .95rem; }
+    .grid-obras { grid-template-columns: 1fr; gap: 16px; }
+    .obra-card { min-height: 0; grid-template-columns: 85px minmax(0, 1fr); column-gap: 15px; padding: 18px; }
+    .obra-capa { width: 85px; height: 128px; }
+    .obra-card h3 { font-size: 1.4rem; overflow-wrap: anywhere; }
+    .adaptacoes { margin-top: 75px; padding: 38px 22px; }
+    .adaptacoes-titulo { margin-bottom: 35px; }
+    .adaptacoes-titulo h2 { font-size: clamp(2.4rem, 10vw, 3.8rem); }
+    .adaptacao { grid-template-columns: 1fr 90px; gap: 15px; padding: 24px 0; }
+    .adaptacao-ano { grid-column: 1 / -1; font-size: 1.7rem; }
+    .adaptacao-conteudo { min-width: 0; }
+    .adaptacao-conteudo h3 { font-size: 1.35rem; overflow-wrap: anywhere; }
+    .adaptacao-conteudo p { font-size: .9rem; }
+    .poster-filme { grid-column: 2; grid-row: 2; width: 90px; height: 132px; }
+    .thalita-frase { margin-top: 65px; }
+    .thalita-frase p { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+
+    .review-card { padding: 25px; }
+    .indicacao { grid-template-columns: 36px minmax(0, 1fr) 18px; gap: 12px; padding: 22px 0; }
+    .indicacao h3 { font-size: 1.2rem; overflow-wrap: anywhere; }
+    .indicacao p { font-size: .9rem; }
+    .numero { font-size: 1.25rem; }
+    .seta { font-size: 1.2rem; }
+    .contato-texto h2 { font-size: clamp(2.7rem, 11vw, 4rem); overflow-wrap: anywhere; }
+    .contato-info { flex-direction: column; gap: 18px; }
+    .formulario input, .formulario textarea { font-size: 16px; }
+    footer { grid-template-columns: 1fr; gap: 28px; padding: 42px 6%; }
+    .footer-logo { grid-column: auto; }
+    .footer-links { flex-direction: row; flex-wrap: wrap; gap: 12px 18px; }
+    .creditos { font-size: .68rem; line-height: 1.6; }
+}
+
+@media (max-width: 380px) {
+    .menu { gap: 9px 11px; }
+    .menu a { font-size: .63rem; }
+    .hero-conteudo h1 { font-size: 2.65rem; }
+    .obra-card { grid-template-columns: 72px minmax(0, 1fr); padding: 14px; gap: 12px; }
+    .obra-capa { width: 72px; height: 110px; }
+    .adaptacoes { padding-inline: 16px; }
+    .adaptacao { grid-template-columns: minmax(0, 1fr) 76px; gap: 10px; }
+    .poster-filme { width: 76px; height: 112px; }
+}
